@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO FINAL MONICA MARTÍNEZ</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+<body>
+    
+    <header class="top-header">
+        <div class="info-bar">
+            <span>Location: 121 Wallstreet Street, NY, USA</span>
+            <span>Email: info@deepmind.com</span>
+            <span>For emergency cases: <strong>800 123 45 67</strong></span>
+            <div class="social-icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="img/logo.jpeg" alt="DeepMind Logo">
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#doctors">Doctores</a></li>
+                <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                <li><a href="#art">Articulo</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+            <a href="#formulario">
+                <button class="appointment-btn">Make an Appointment</button>
+            </a>
+        </nav>
+    </header>
+    
+
+
+    <section class="slider">
+        <ul class="rslides" id="slider">
+            <li>
+                <img src="img/slide2.jpg" alt="Slide 1">
+                <div class="slide-text wow animate__animated animate__fadeInLeft">
+                    <h1>We Improve People's Lives</h1>
+                    <p>Benefit Society</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide1.jpg" alt="Slide 2">
+                <div class="slide-text wow animate__animated animate__fadeInLeft" >
+                    <h1>Dedicated to Your Health</h1>
+                    <p>Professional Care</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide3.jpg" alt="Slide 3">
+                <div class="slide-text wow animate__animated animate__fadeInLeft">
+                    <h1>Your Health, Our Priority</h1>
+                    <p>Trusted Services</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="therapies">
+        <div class="container">
+            <h2 class="wow animate__animated animate__fadeInUp">Therapies & Treatments</h2>
+            <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <div class="grid">
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <img src="img/estres.png">
+                    <h3>Stress Management</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <img src="img/depression.png">
+                    <h3>Depression</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <img src="img/friendship.png">
+                    <h3>Relationships</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                    <img src="img/anxiety.png">
+                    <h3>Anxiety</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                    <img src="img/coaching.png">
+                    <h3>Executive Coaching</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1.2s">
+                    <img src="img/community.png">
+                    <h3>Support Group</h3>
+                    <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="parallax-form" id="formulario">
+        <div class="parallax-image"></div>
+        <div class="form-container">
+            <h2 class="wow animate__animated animate__fadeInUp">Welcome To DeepMind Clinic</h2>
+            <form id="contactForm" class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    
+    <section id="carousel" class="carousel">
+        <div id="slide-container" class="carousel-slides">
+          <div class="slide">
+            <img src="img/study1.jpg" alt="Social Media Risks">
+            <h3>Social Media Risks to Mental Health</h3>
+            <p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld. Practicing...</p>
+          </div>
+          <div class="slide">
+            <img src="img/study2.jpg" alt="Mindfulness for the Introvert">
+            <h3>Mindfulness For The Introvert</h3>
+            <p>Americans oftentimes ignore some basic, daily routines of oral hygiene, that need to be upheld. Practicing...</p>
+          </div>
+          <div class="slide">
+            <img src="img/study3.jpg" alt="Antipsychiatry">
+            <h3>The Hypocrisy of Antipsychiatry</h3>
+            <p>Bad breath is a deal breaker both in business and in personal life of ours. And...</p>
+          </div>
+          <div class="slide">
+            <img src="img/study4.jpg" alt="Another Study">
+            <h3>Another Study</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div class="slide">
+            <img src="img/study5.jpg" alt="Yet Another Study">
+            <h3>Yet Another Study</h3>
+            <p>More details about the study...</p>
+          </div>
+        </div>
+       
+        <button id="back-button" class="carousel-btn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        
+        <button id="forward-button" class="carousel-btn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+  
+      </section>
+      
+      <br><br>
+
+     <section class="video-article-container" id="art">
+  <div class="video-section">
+    <div class="computer-image">
+      <img src="img/monitor.png" alt="Computer" />
+      <div class="video-frame">
+        <video autoplay loop muted playsinline>
+          <source src="img/neuro.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="article-section">
+    <article>
+      <h2>¿Qué es la Neuropsicología?</h2>
+      <p>
+        La neuropsicología es una disciplina que estudia las funciones cerebrales y su relación con el comportamiento humano. Esta rama de la psicología es clave para comprender cómo los trastornos neurológicos afectan nuestra vida diaria.
+      </p>
+      <p>
+        Con avances en esta área, los especialistas pueden diagnosticar y tratar problemas que involucran la memoria, el lenguaje, y las emociones.
+      </p>
+      <a href="#learn-more" class="read-more">Leer más...</a>
+    </article>
+  </div>
+</section>
+
+<section class="psychiatrists-section" id="doctors">
+    <h2>Psychiatrists</h2>
+    <div class="doctor-grid">
+    
+      <div class="doctor-card">
+        <div class="image-container">
+          <img src="img/doctor1.jpg" alt="Dr. Marco Rossi">
+          <div class="overlay">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <h3>Dr. Marco Rossi</h3>
+        <p>Cardiac Surgeon</p>
+        <p>
+          The Department of Pediatrics strives to improve the well-being of all children.
+        </p>
+        <p><i class="fas fa-phone"></i> +800 123 45 67</p>
+        <p><i class="fas fa-envelope"></i> info@deepmind.com</p>
+      </div>
+  
+      
+      <div class="doctor-card">
+        <div class="image-container">
+          <img src="img/doctor3.jpg" alt="Dr. Sarah Johnson">
+          <div class="overlay">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <h3>Dr. Sarah Johnson</h3>
+        <p>Consulting Doctor</p>
+        <p>
+          The Department of Pediatrics strives to improve the well-being of all children.
+        </p>
+        <p><i class="fas fa-phone"></i> +800 123 45 67</p>
+        <p><i class="fas fa-envelope"></i> info@deepmind.com</p>
+      </div>
+
+      <div class="doctor-card">
+        <div class="image-container">
+          <img src="img/doctor2.jpg" alt="Dr. Marco Rossi">
+          <div class="overlay">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <h3>Dr. Marco Rossi</h3>
+        <p>Cardiac Surgeon</p>
+        <p>
+          The Department of Pediatrics strives to improve the well-being of all children.
+        </p>
+        <p><i class="fas fa-phone"></i> +800 123 45 67</p>
+        <p><i class="fas fa-envelope"></i> info@deepmind.com</p>
+      </div>
+
+      <div class="doctor-card">
+        <div class="image-container">
+          <img src="img/doctor4.jpg" alt="Dr. Melody Johnson">
+          <div class="overlay">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <h3>Dr. Meredith Grey</h3>
+        <p>Cardiac Surgeon</p>
+        <p>
+          The Department of Pediatrics strives to improve the well-being of all children.
+        </p>
+        <p><i class="fas fa-phone"></i> +800 123 45 67</p>
+        <p><i class="fas fa-envelope"></i> info@deepmind.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="accordion-section" id="preguntas">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">¿Qué es la neuropsicología? <i class="fas fa-plus"></i></button>
+            <div class="accordion-content">
+                <i class="fa-solid fa-brain"></i>
+                <p>La neuropsicología es una disciplina que estudia las funciones cerebrales y su relación con el comportamiento humano.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Cómo agendar una cita? <i class="fas fa-plus"></i></button>
+            <div class="accordion-content">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>Puedes agendar una cita llamando al +800 123 4567 o enviando un correo a info@deepmind.com.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Qué servicios ofrecemos? <i class="fas fa-plus"></i></button>
+            <div class="accordion-content">
+                <i class="fa-solid fa-heart"></i>
+                <p>Ofrecemos servicios como manejo del estrés, coaching ejecutivo, tratamiento para la depresión y más.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <h2>Galería de Imágenes</h2>
+    <div class="gallery-container">
+        <a href="img/galeria1.jpg" data-fancybox="gallery">
+            <figure>
+                <img src="img/galeria1.jpg" alt="Imagen 1">
+            </figure>
+            
+        </a>
+        <a href="img/galeria2.jpg" data-fancybox="gallery" >
+            <figure>
+                <img src="img/galeria2.jpg" alt="Imagen 2">
+            </figure>
+        </a>
+        <a href="img/galeria3.jpg" data-fancybox="gallery" >
+            <figure>
+                <img src="img/galeria3.jpg" alt="Imagen 3">
+            </figure>
+
+        </a>
+        <a href="img/galeria4.jpg" data-fancybox="gallery" >
+            <figure>
+                <img src="img/galeria4.jpg" alt="Imagen 4">
+            </figure>
+        </a>
+    </div>
+</section>
+
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Publicidad</h2>
+        <p>¡Descubre nuestras ofertas exclusivas en la Clínica DeepMind! <br> ¡Aprovecha ya!</p>
+        <img src="img/publicidad.jpg" alt="Publicidad Clínica" />
+    </div>
+</div>
+
+<section class="features-section" id="servicios">
+    <div class="feature">
+        <img src="img/service1.jpg" alt="Experienced Physicians" />
+        <h3>Experienced Physicians</h3>
+        <p>Your health is your most important asset. You should entrust it only to the best professionals.</p>
+    </div>
+    <div class="feature">
+        <img src="img/service2.jpg" alt="Personalized Treatment" />
+        <h3>Personalized Treatment</h3>
+        <p>Treatment choices perfectly match your goals of treatment complications with early intervention.</p>
+    </div>
+    <div class="feature">
+        <img src="img/service3.jpg" alt="Immediate Service" />
+        <h3>Immediate Service</h3>
+        <p>Your treatment plan is designed for steady progress, with every phase promptly implemented.</p>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <p>&copy; 2024 DeepMind Clinic. Todos los derechos reservados.</p>
+    <h3>MONICA PATRICIA MARTÍNEZ ALCOCER</h3>
+    <p>DESARROLLO FRONTEND 9SC</p>
+</footer>
+
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+   
+    
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/responsiveslides.js"></script>
+    
+    <script src="js/carousel.js"></script>
+    
+    <script>
+        new WOW().init();
+    
+        
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,         // Reproducción automática
+                speed: 800,         // Velocidad de transición
+                timeout: 4000,      // Tiempo entre transiciones
+                nav: true,          // Habilitar flechas de navegación
+                prevText: "&#10094;", // Texto de flecha anterior
+                nextText: "&#10095;", // Texto de flecha siguiente
+                pause: true,        // Pausa al pasar el mouse
+            });
+            
+        });
+    </script>
+
+<script>
+    $(document).ready(function () {
+    const scrollToTopBtn = $("#scrollToTop");
+
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) { 
+            scrollToTopBtn.fadeIn();
+        } else {
+            scrollToTopBtn.fadeOut();
+        }
+    });
+
+
+    scrollToTopBtn.click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800); 
+    });
+});
+
+</script>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+            alert("TODOS LOS CAMPOS REQUERIDOS.");
+            return;
+        }
+
+        alert("Form enviado con exito!");
+    });
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+  $(".accordion-header").on("click", function () {
+    // Cerrar otros contenidos abiertos
+    $(".accordion-content").not($(this).next()).slideUp(300);
+    $(".accordion-header").not($(this)).removeClass("active");
+
+    // Alternar el contenido actual
+    $(this).next(".accordion-content").slideToggle(300);
+    $(this).toggleClass("active");
+  });
+});
+
+</script>
+
+
+<script>
+    $(document).ready(function() {
+       
+        $('[data-fancybox="gallery"]').fancybox({
+            loop: true, // Permite recorrer las imágenes en bucle
+            buttons: [
+                "zoom",          
+                "slideShow",     
+                "thumbs",        
+                "close"          
+            ],
+            animationEffect: "zoom-in-out", // Efecto de transición al abrir la imagen
+            transitionEffect: "slide",     // Efecto al cambiar de imagen
+            protect: true                  // Desactiva el clic derecho para proteger imágenes
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+    const modal = $('#modal'); 
+    const closeModal = $('.close'); 
+
+    
+    setTimeout(() => {
+        modal.fadeIn(); 
+    }, 3000);
+
+    // Cerrar el modal al hacer clic en el botón de cierre
+    closeModal.on('click', function () {
+        modal.fadeOut(); // Ocultar el modal con un efecto de desvanecimiento
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    $(window).on('click', function (event) {
+        if ($(event.target).is(modal)) { 
+            modal.fadeOut(); 
+        }
+    });
+});
+</script>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+
+</script>
+
+
+
+</body>
+</html>
